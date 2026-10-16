@@ -9,6 +9,6 @@ const zenek = [
     { oldal: "zene8.html", cim: "Pink + White", eloado: "Frank Ocean", youtubeId: "uzS3WG6__G4" },
     { oldal: "zene9.html", cim: "Pattern Recognition", eloado: "Neuro-sama", youtubeId: "xWDfREk0ZLs" },
     { oldal: "zene10.html", cim: "Lay All Your Love On Me", eloado: "ABBA", youtubeId: "5mHzaIehRTE" },
-    { oldal: "zene11.html", cim: "Lovely", eloado: "Bill Withers", youtubeId: "uzS3WG6__G4" },
+    { oldal: "zene11.html", cim: "Lovely", eloado: "Bill Withers", youtubeId: "bEeaS6fuUoA" },
     { oldal: "zene12.html", cim: "Hate yourself", eloado: "TV Girl", youtubeId: "9d_4Dltgrsg" },
 ];
