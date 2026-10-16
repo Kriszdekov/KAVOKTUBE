@@ -1,0 +1,142 @@
+/* Alapszínek */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+header {
+    background-color: #222;
+    padding: 16px 30px;
+    border-bottom: 1px solid #383838;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #ffb7c5;
+}
+
+/* Bal oldalt a nagy videó, jobb oldalt az ajánlások */
+main {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+.fo-video {
+    flex: 3;
+    min-width: 0;
+}
+
+.video-keret {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-keret iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.fo-video h2 {
+    margin-bottom: 8px;
+}
+
+.fo-video p {
+    color: #bdbdbd;
+}
+
+/* Az ajánlások egymás alá kerülnek */
+.jobb-oldal {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.jobb-oldal h2 {
+    font-size: 19px;
+    margin: 0 0 4px;
+}
+
+.ajanlas a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.ajanlas a:hover {
+    background-color: #303030;
+}
+
+.kis-video {
+    width: 135px;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+    background: #45404b;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffb7c5;
+    font-size: 28px;
+}
+
+.zene-adatok h3 {
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+
+.zene-adatok p {
+    font-size: 12px;
+    color: #aaa;
+    margin: 0;
+}
+
+/* Telefonon a jobb oldali zenék a fő videó alá kerülnek */
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .fo-video, .jobb-oldal {
+        width: 100%;
+    }
+}
+
+.youtube-link a { color: #ffb7c5; text-decoration: none; }
+.youtube-link a:hover { text-decoration: underline; }
+
+/* A JavaScript a sectionöket ebbe a divbe rakja. */
+#ajanlas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kis-video {
+    object-fit: cover; /* img esetén levágja a felesleges részeket */
+}
+
+.logo-link { color: inherit; text-decoration: none; }
+.video-helyorzo { display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; color: #ccc; }
