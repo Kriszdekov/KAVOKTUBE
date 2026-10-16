@@ -7,10 +7,13 @@ for (let i = ajanlottZenek.length - 1; i > 0; i--) {
     [ajanlottZenek[i], ajanlottZenek[j]] = [ajanlottZenek[j], ajanlottZenek[i]];
 }
 
+const kilencZene = ajanlottZenek.slice(0, 9);
+
+
 const lista = document.querySelector("#ajanlas-lista");
 
 if (lista) {
-    ajanlottZenek.forEach(zene => {
+    kilencZene.forEach(zene => {
         const section = document.createElement("section");
         section.className = "ajanlas";
 
